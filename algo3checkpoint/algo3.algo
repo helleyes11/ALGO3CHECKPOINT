@@ -1,0 +1,28 @@
+PROCEDURE dot_product(tab1, tab2)
+VAR
+;
+    i : INTEGER;
+    p=0 : FLOAT;
+BEGIN
+   FOR i FROM 0 TO 2  DO
+    p:= p+ tab1[i]*tab2[i]   
+   END_FOR   
+END
+ALGORITHM algo3
+VAR
+    U, V  : ARRAY_OF FLOAT[3];
+    S: FLOAT;
+BEGIN
+    FOR i FROM 0 TO 2  DO
+     Write("add the element number", i+1,"of the U vector")
+     Read(U(i))
+     Write("add the element number", i+1,"of the V vector")
+     Read(v(i))
+    END_FOR  
+    S:= dot_product(U, V)
+
+IF (S=0) THEN
+    Write("the two Vectors are orthogonal")
+END_IF
+ 
+END
