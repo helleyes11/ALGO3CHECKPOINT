@@ -1,6 +1,6 @@
 PROCEDURE dot_product(tab1, tab2)
 VAR
-;
+
     i : INTEGER;
     p=0 : FLOAT;
 BEGIN
